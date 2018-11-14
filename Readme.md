@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Polina Kuchina](https://up.htmlacademy.ru/htmlcss/23/user/201227).
-* Наставник: [Виталя Игошин](https://htmlacademy.ru/profile/id353627).
+* Студент: [Polina Kuchina (KuchinaPS)](https://up.htmlacademy.ru/htmlcss/23/user/201227).
+* Наставник: [Виталя Игошин (Vitaligo)](https://htmlacademy.ru/profile/id353627).
 
 ---
 

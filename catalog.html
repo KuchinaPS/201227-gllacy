@@ -289,5 +289,29 @@
     </tr>
   </table>
 </section>
+<section class="modal modal-search">
+  <h2 class="visually-hidden">Форма поиска</h2>
+  <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+    <label for="user-search">Поисковый запрос</label>
+    <input class="search" type="search" placeholder="Что ищем?" id="user-search">
+    <button class="visually-hidden" type="submit">Поиск</button>
+  </form>
+</section>
+<section class="modal modal-login">
+  <h2 class="visually-hidden">Форма входа</h2>
+  <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="login-email">Электронная почта</label>
+      <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
+    </p>
+    <p>
+      <label class="visually-hidden" for="user-password">Пароль </label>
+      <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
+    </p>
+    <button class="button" type="submit">Войти</button>
+    <a class="restore" href="#">Забыли пароль?</a>
+    <a class="registration" href="#">Новая регистрация</a>
+  </form>
+</section>
 </body>
 </html>

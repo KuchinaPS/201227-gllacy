@@ -166,6 +166,7 @@
     <h2 class="visually-hidden">Подписка на рассылку</h2>
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
       не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+
   </section>
   <section class="map">
     <h2 class="visually-hidden">Наше месторасположение</h2>
@@ -204,7 +205,7 @@
     </a>
   </p>
 </footer>
-<section class="modal-login">
+<section class="modal modal-login">
   <h2 class="visually-hidden">Форма входа</h2>
   <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
@@ -220,9 +221,9 @@
     <a class="registration" href="#">Новая регистрация</a>
   </form>
 </section>
-<section class="modal-feedback">
+<section class="modal modal-feedback">
   <h2>Мы обязательно вам ответим!</h2>
-  <form class="modal-feedback-form">
+  <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="visually-hidden" for="user-name">Ваше имя</label>
       <input class="feedback-name" type="text" name="name" placeholder="Как вас зовут?" id="user-name">
@@ -232,11 +233,19 @@
       <input class="feedback-email" type="email" name="email" placeholder="Ваша почта для ответа" id="user-email">
     </p>
     <p>
-      <label class="visually-hidden" for="user-feedback">Напишете нам</label>
+      <label class="visually-hidden" for="user-feedback">Напишите нам</label>
       <textarea class="feedback-text" name="feedback" id="user-feedback">Напишите что-нибудь...</textarea>
     </p>
     <button class="button" type="submit">Отправить</button>
     <button class="button-close" type="button">Закрыть</button>
+  </form>
+</section>
+<section class="modal modal-search">
+  <h2 class="visually-hidden">Форма поиска</h2>
+  <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+    <label for="user-search">Поисковый запрос</label>
+    <input class="search" type="search" placeholder="Что ищем?" id="user-search">
+    <button class="visually-hidden" type="submit">Поиск</button>
   </form>
 </section>
 </body>

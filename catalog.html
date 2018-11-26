@@ -15,9 +15,62 @@
       <li><a href="deliver.html">Доставка и оплата</a></li>
       <li><a href="about.html">О Компании</a></li>
     </ul>
-    <a class="search">Поиск</a>
-    <a class="login-link">Вход</a>
-    <a class="basket">Корзина</a>
+    <a class="search" href="#"><span class="visually-hidden">Поиск</span></a>
+    <section class="modal modal-search">
+      <h2 class="visually-hidden">Форма поиска</h2>
+      <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="user-search">Поисковый запрос</label>
+        <input class="search" type="search" placeholder="Что ищем?" id="user-search">
+        <button class="visually-hidden" type="submit">Поиск</button>
+      </form>
+    </section>
+    <a class="login-link" href="#">Вход</a>
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Форма входа</h2>
+      <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="login-email">Электронная почта</label>
+          <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-password">Пароль </label>
+          <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
+        </p>
+        <button class="button" type="submit">Войти</button>
+        <a class="restore" href="#">Забыли пароль?</a>
+        <a class="registration" href="#">Новая регистрация</a>
+      </form>
+    </section>
+    <a class="basket" href="#">Корзина</a>
+    <section class="modal-basket">
+      <h2 class="visually-hidden">Товары в корзине</h2>
+      <table class="basket-table">
+        <tbody>
+        <tr>
+          <td>Пломбир с апельсиновым джемом</td>
+          <td>1,5 кг х 200 руб.</td>
+          <td>300 руб.</td>
+          <td>
+            <button class="button-close" type="button"><span class="visually-hidden">Убрать из корзины</span></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Клубничный пломбир с присыпкой
+            из белого шоколада
+          </td>
+          <td>1,5 кг х 300 руб.</td>
+          <td>450 руб.</td>
+          <td>
+            <button class="button-close" type="button"><span class="visually-hidden">Убрать из корзины</span></button>
+          </td>
+        </tr>
+        <tr>
+          <td>Итого: 750 руб.</td>
+        </tr>
+        </tbody>
+      </table>
+      <a class="button" href="#">Оформитьзаказ</a>
+    </section>
   </nav>
   <div class="contacts">
     <p>С 10 до 20, ежедневно<br>
@@ -239,10 +292,10 @@
 <footer class="main-footer">
   <div class="main-footer-social">
     <ul>
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Инстаграм</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
     </ul>
   </div>
   <div class="footer-info">
@@ -260,58 +313,5 @@
     </a>
   </p>
 </footer>
-<section class="modal-basket">
-  <h2 class="visually-hidden">Товары в корзине</h2>
-  <table class="basket-table">
-    <tr>
-      <td>Пломбир с апельсиновым джемом</td>
-      <td>1,5 кг х 200 руб.</td>
-      <td>300 руб.</td>
-      <td>
-        <button class="button-close" type="button">Закрыть</button>
-      </td>
-    </tr>
-    <tr>
-      <td>Клубничный пломбир с присыпкой
-        из белого шоколада
-      </td>
-      <td>1,5 кг х 300 руб.</td>
-      <td>450 руб.</td>
-      <td>
-        <button class="button-close" type="button">Закрыть</button>
-      </td>
-    </tr>
-    <tr>
-      <td>Итого: 750 руб.</td>
-    </tr>
-    <tr>
-      <td><a class="button" href="#">Оформить заказ</a></td>
-    </tr>
-  </table>
-</section>
-<section class="modal modal-search">
-  <h2 class="visually-hidden">Форма поиска</h2>
-  <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-    <label for="user-search">Поисковый запрос</label>
-    <input class="search" type="search" placeholder="Что ищем?" id="user-search">
-    <button class="visually-hidden" type="submit">Поиск</button>
-  </form>
-</section>
-<section class="modal modal-login">
-  <h2 class="visually-hidden">Форма входа</h2>
-  <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label class="visually-hidden" for="login-email">Электронная почта</label>
-      <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
-    </p>
-    <p>
-      <label class="visually-hidden" for="user-password">Пароль </label>
-      <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
-    </p>
-    <button class="button" type="submit">Войти</button>
-    <a class="restore" href="#">Забыли пароль?</a>
-    <a class="registration" href="#">Новая регистрация</a>
-  </form>
-</section>
 </body>
 </html>

@@ -3,23 +3,37 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси-Каталог</title>
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  </head>
+<body class="inner-page">
 <header class="main-header">
   <a class="main-header-logo" href="index.html">
     <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
   </a>
   <nav class="main-navigation">
     <ul class="site-navigation">
-      <li class="site-navigation-current"><a>Каталог</a></li>
-      <li><a href="deliver.html">Доставка и оплата</a></li>
-      <li><a href="about.html">О Компании</a></li>
+      <li class="site-navigation-item">
+        <a class="submenu" href="#">Каталог</a>
+        <div class="catalog-submenu">
+          <h3>Новинки</h3>
+          <ul class="catalog-submenu-list">
+            <li class="catalog-submenu-item"><a href="catalog.html">Сливочное</a></li>
+            <li class="catalog-submenu-item-current"><a href="#">Щербеты</a></li>
+            <li class="catalog-submenu-item"><a href="#">Фруктовый лед</a></li>
+            <li class="catalog-submenu-item"><a href="#">Мелорин</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="site-navigation-item"><a href="deliver.html">Доставка и оплата</a></li>
+      <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
     </ul>
-    <a class="search" href="#"><span class="visually-hidden">Поиск</span></a>
+    <a class="search" href="#">Поиск</a>
     <section class="modal modal-search">
       <h2 class="visually-hidden">Форма поиска</h2>
       <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden" for="user-search">Поисковый запрос</label>
+        <label for="user-search">Поисковый запрос</label>
         <input class="search" type="search" placeholder="Что ищем?" id="user-search">
         <button class="visually-hidden" type="submit">Поиск</button>
       </form>
@@ -42,37 +56,6 @@
       </form>
     </section>
     <a class="basket" href="#">Корзина</a>
-    <section class="modal-basket">
-      <h2 class="visually-hidden">Товары в корзине</h2>
-      <table class="basket-table">
-        <tr>
-          <td>
-            <button class="button-close" type="button"><span class="visually-hidden">Убрать из корзины</span></button>
-          </td>
-          <td><img src="img/mini-icon-basket.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х 200 руб.</td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td>
-            <button class="button-close" type="button"><span class="visually-hidden">Убрать из корзины</span></button>
-          </td>
-          <td><img src="img/mini-icon-basket2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой
-        из белого шоколада"></td>
-          <td>Клубничный пломбир с присыпкой
-            из белого шоколада
-          </td>
-          <td>1,5 кг х 300 руб.</td>
-          <td>450 руб.</td>
-        </tr>
-        <tr>
-          <td colspan="4">Итого:</td>
-          <td>750 руб.</td>
-        </tr>
-      </table>
-      <a class="button" href="#">Оформить заказ</a>
-    </section>
   </nav>
   <div class="contacts">
     <p>С 10 до 20, ежедневно<br>

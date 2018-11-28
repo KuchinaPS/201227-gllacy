@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
@@ -11,19 +14,20 @@
   </a>
   <nav class="main-navigation">
     <ul class="site-navigation">
-      <li><a href="#">Каталог</a>
+      <li class="site-navigation-item">
+        <a class="submenu" href="#">Каталог</a>
         <div class="catalog-submenu">
           <h3>Новинки</h3>
           <ul class="catalog-submenu-list">
-            <li><a href="catalog.html">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый лед</a></li>
-            <li><a href="#">Мелорин</a></li>
+            <li class="catalog-submenu-item"><a href="catalog.html">Сливочное</a></li>
+            <li class="catalog-submenu-item"><a href="#">Щербеты</a></li>
+            <li class="catalog-submenu-item"><a href="#">Фруктовый лед</a></li>
+            <li class="catalog-submenu-item"><a href="#">Мелорин</a></li>
           </ul>
         </div>
       </li>
-      <li><a href="deliver.html">Доставка и оплата</a></li>
-      <li><a href="about.html">О Компании</a></li>
+      <li class="site-navigation-item"><a href="deliver.html">Доставка и оплата</a></li>
+      <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
     </ul>
     <a class="search" href="#">Поиск</a>
     <section class="modal modal-search">
@@ -54,9 +58,9 @@
     <a class="basket" href="#">Корзина</a>
   </nav>
   <div class="contacts">
-    <p>С 10 до 20, ежедневно<br>
-      8 812 450-25-25
-    </p>
+    <p>С 10 до 20, ежедневно</p>
+      <p>8 812 450-25-25</p>
+
   </div>
 </header>
 <main class="container">
@@ -81,6 +85,17 @@
         <h3>Пломбир с помадкой
           и клубничный щербет</h3>
         <a class="button" href="#">Давайте оба!</a>
+      </li>
+    </ul>
+    <ul class="sliders-page">
+      <li class="slides-radio">
+        <button class="slider-button">1</button>
+      </li>
+      <li class="slides-radio">
+        <button class="slider-button">2</button>
+      </li>
+      <li class="slides-radio">
+        <button class="slider-button">3</button>
       </li>
     </ul>
   </section>

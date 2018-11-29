@@ -13,13 +13,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffffff;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: #ffbc9e;
 }
 
 .main-navigation {
@@ -31,11 +24,29 @@ a:active {
 
 .site-navigation {
   list-style: none;
+}
+
+.main-navigation > a {
+  color: #ffffff;
   font-weight: 700;
 }
 
-.site-navigation-item a {
+.main-navigation > a:hover,
+.main-navigation > a:focus {
+  color: #000000;
+  background-color: #f8f7f4;
+}
+
+.main-navigation > a:active {
+  color: #000000;
+  background-color: #ededed;
+  box-shadow: inset 0 2px 0 1px #696969;
+}
+
+
+.site-navigation-item > a {
   color: #ffffff;
+  font-weight: 700;
 }
 
 .site-navigation-item > a:hover,
@@ -61,18 +72,22 @@ a:active {
   color: #000000;
 }
 
-.catalog-submenu a {
+.catalog-submenu-item a {
   color: #000000;
   text-decoration: none;
 }
 
-.catalog-submenu h3 {
+.catalog-submenu-title {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
 }
 
 .site-navigation-item:hover .catalog-submenu {
+  display: block;
+}
+
+.submenu:focus + .catalog-submenu {
   display: block;
 }
 
@@ -87,7 +102,8 @@ a:active {
 .catalog-submenu-item a:focus {
   background-color: #f6b5a5;
 }
-.catalog-submenu-item-current a{
+
+.catalog-submenu-item-current a {
   background-color: #d07058;
 }
 
@@ -98,7 +114,8 @@ a:active {
   background: linear-gradient(to top, #e74a35, #f26843);
   border: none;
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.36);
-  border-radius: 90px;
+  border-radius: 30px;
+  color: #ffffff;
 }
 
 .button:hover,
@@ -111,88 +128,111 @@ a:active {
 .button:active {
   background: linear-gradient(to bottom, #d74632, #e1613e);
   color: #ffffff;
-  box-shadow:inset 0 2px 2px 0 rgb(148, 39, 24);
+  box-shadow: inset 0 2px 2px 0 rgb(148, 39, 24);
 }
 
 .modal {
   display: none;
 }
+.slider-list,
 .sliders-page {
   list-style: none;
 }
+
 .contacts p:first-child {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
 }
+
 .contacts p:last-child {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
 }
-.banners-item h3 {
+
+.banners-list {
+  list-style: none;
+}
+.banners-item-berry {
+  width: 560px;
+  height: 229px;
+  background-image: url("../img/banner-rasberry.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.banners-item-choco {
+  width: 560px;
+  height: 229px;
+  background-image: url("../img/banner-shoco.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+.banners-list h3 {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
-.banners-item p {
+
+.banners-list p {
   font-size: 18px;
   font-weight: 700;
 }
-.banners-list{
-  list-style: none;
-}
-.banners-list li:first-child {
-  width: 560px;
-  height: 229px;
-  background-image:url("../img/banner-rasberry.jpg");
-  background-repeat: no-repeat;
-  border-radius: 15px;
-}
-.banners-list li:last-child {
-  width: 560px;
-  height: 229px;
-  background-image:url("../img/banner-shoco.jpg");
-  background-repeat: no-repeat;
-  border-radius: 15px;
-}
+
 .product-image img {
   border-radius: 50%;
 }
+
 .hits-list {
   list-style: none;
 }
-.product h3{
+.product {
+  color: #ffffff;
+
+}
+
+.product a {
+  color: #ffffff;
   font-weight: 500;
+}
+.product a:hover,
+.product:focus{
+  color: #ffbc9e;
 }
 .product-price {
   font-size: 45px;
-  line-height:45px;
+  line-height: 45px;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
 
-
 }
+
 .product-price span {
   font-size: 30px;
-  line-height:45px;
+  line-height: 45px;
   font-weight: 700;
+  color: #ffffff;
 
 }
-.features{
-  background-image:url("../img/pattern-wafer-full.jpg");
+
+.features {
+  background-image: url("../img/pattern-wafer-full.jpg");
   width: 1146px;
   height: 306px;
   border-radius: 15px;
   color: #323232;
 }
+
 .features p {
   font-size: 24px;
-  line-height:30px;
+  line-height: 30px;
   font-weight: 500;
   color: #323232;
 }
-.features-list{
+
+.features-list {
   color: #000000;
   list-style: none;
 }
+

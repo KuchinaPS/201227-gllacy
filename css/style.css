@@ -9,12 +9,14 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
-}
+  }
 
 a {
   text-decoration: none;
 }
-
+.page-inner{
+  background: linear-gradient(to bottom, #9cb0a5, #849d8f);
+}
 .main-navigation {
   font-size: 16px;
   line-height: 18px;
@@ -29,6 +31,8 @@ a {
 .user-navigation-item > a {
   color: #ffffff;
   font-weight: 700;
+  background-color:rgba(255, 255, 255,0.2);
+  border-radius: 15px;
 }
 
 .user-navigation-item > a:hover,
@@ -70,6 +74,9 @@ a {
   list-style: none;
   background-color: #f8f7f4;
   color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+
 }
 
 .catalog-submenu-item a {
@@ -140,13 +147,13 @@ a {
   list-style: none;
 }
 
-.contacts p:first-child {
+.main-header-contacts p:first-child {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
 }
 
-.contacts p:last-child {
+.main-header-contacts p:last-child {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
@@ -270,19 +277,19 @@ a {
   color: #5a5a5a;
 }
 
-.map-contact {
+.contacts-info {
   background-color: #fefefe;
   border-radius: 16px;
 }
 
-.map-contact p {
+.contacts-info p {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
 
 }
 
-.map-contact b {
+.contacts-info b {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -291,11 +298,11 @@ a {
 .main-footer {
   color: #ffffff;
 }
-.main-footer-social ul{
+.social-links{
   list-style: none;
 }
 
-.social-button {
+.social-links-item {
   color: #ffffff;
 }
 

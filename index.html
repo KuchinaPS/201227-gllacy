@@ -29,37 +29,41 @@
       <li class="site-navigation-item"><a href="deliver.html">Доставка и оплата</a></li>
       <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
     </ul>
-    <a class="search" href="#">Поиск</a>
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label for="user-search">Поисковый запрос</label>
-        <input class="search" type="search" placeholder="Что ищем?" id="user-search">
-        <button class="visually-hidden" type="submit">Поиск</button>
-      </form>
-    </section>
-    <a class="login-link" href="#">Вход</a>
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Форма входа</h2>
-      <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="login-email">Электронная почта</label>
-          <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль </label>
-          <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <a class="restore" href="#">Забыли пароль?</a>
-        <a class="registration" href="#">Новая регистрация</a>
-      </form>
-    </section>
-    <a class="basket" href="#">Корзина</a>
+    <div class="user-navigation">
+      <div class="user-navigation-item">
+        <a class="search" href="#">Поиск</a>
+        <section class="modal modal-search">
+          <h2 class="visually-hidden">Форма поиска</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="user-search">Поисковый запрос</label>
+            <input class="search" type="search" placeholder="Что ищем?" id="user-search">
+            <button class="visually-hidden" type="submit">Поиск</button>
+          </form>
+        </section>
+        <a class="login-link" href="#">Вход</a>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Форма входа</h2>
+          <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль </label>
+              <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
+            </p>
+            <button class="button" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </form>
+        </section>
+        <a class="basket" href="#">Корзина</a>
+      </div>
+    </div>
   </nav>
   <div class="contacts">
     <p>С 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+    <p>8 812 450-25-25</p>
 
   </div>
 </header>
@@ -103,13 +107,13 @@
     <h2 class="visually-hidden">Наши акции</h2>
     <ul class="banners-list">
       <li class="banners-item-berry">
-        <h3>Малинка даром!</h3>
+        <h3 class=".banners-caption">Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
         </p>
         <a class="button" href="#">Хочу варенье!</a>
       </li>
       <li class="banners-item-choco">
-        <h3>Шоколадки даром!</h3>
+        <h3 class=".banners-text">Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
         <a class="button" href="#">Хочу шоколадки!</a>
@@ -133,6 +137,7 @@
             <span>/кг</span>
           </p>
         </a>
+
       </li>
       <li class="hits-item product">
         <a href="catalog-item.html">
@@ -182,7 +187,7 @@
   </section>
   <section class="features">
     <h2 class="visually-hidden">Наши преимущества</h2>
-    <p><b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+    <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес
     </p>
     <ul class="features-list">
       <li class="features-item">
@@ -204,7 +209,7 @@
     </ul>
   </section>
   <article class="news">
-    <h2>Новое в нашем блоге</h2>
+    <h2 class="news-title">Новое в нашем блоге</h2>
     <a href="new-article.html">
       10 способов сервировки
       фруктовых щербетов к

@@ -15,9 +15,9 @@
   <nav class="main-navigation">
     <ul class="site-navigation">
       <li class="site-navigation-item">
-        <a class="submenu" href="#">Каталог</a>
+        <a class="submenu-current">Каталог</a>
         <div class="catalog-submenu">
-          <h3>Новинки</h3>
+          <h3 class="catalog-submenu-title">Новинки</h3>
           <ul class="catalog-submenu-list">
             <li class="catalog-submenu-item"><a href="catalog.html">Сливочное</a></li>
             <li class="catalog-submenu-item-current"><a href="#">Щербеты</a></li>
@@ -29,38 +29,42 @@
       <li class="site-navigation-item"><a href="deliver.html">Доставка и оплата</a></li>
       <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
     </ul>
-    <a class="search" href="#">Поиск</a>
-    <section class="modal modal-search">
-      <h2 class="visually-hidden">Форма поиска</h2>
-      <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
-        <label for="user-search">Поисковый запрос</label>
-        <input class="search" type="search" placeholder="Что ищем?" id="user-search">
-        <button class="visually-hidden" type="submit">Поиск</button>
-      </form>
-    </section>
-    <a class="login-link" href="#">Вход</a>
-    <section class="modal modal-login">
-      <h2 class="visually-hidden">Форма входа</h2>
-      <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label class="visually-hidden" for="login-email">Электронная почта</label>
-          <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
-        </p>
-        <p>
-          <label class="visually-hidden" for="user-password">Пароль </label>
-          <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
-        </p>
-        <button class="button" type="submit">Войти</button>
-        <a class="restore" href="#">Забыли пароль?</a>
-        <a class="registration" href="#">Новая регистрация</a>
-      </form>
-    </section>
-    <a class="basket" href="#">Корзина</a>
+    <div class="user-navigation">
+      <div class="user-navigation-item">
+        <a class="search" href="#">Поиск</a>
+        <section class="modal modal-search">
+          <h2 class="visually-hidden">Форма поиска</h2>
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="user-search">Поисковый запрос</label>
+            <input class="search" type="search" placeholder="Что ищем?" id="user-search">
+            <button class="visually-hidden" type="submit">Поиск</button>
+          </form>
+        </section>
+        <a class="login-link" href="#">Вход</a>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Форма входа</h2>
+          <form class="modal-login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="login-email" type="email" name="email" placeholder="Электронная почта" id="login-email">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль </label>
+              <input class="login-password" type="password" name="password" placeholder="Пароль" id="user-password">
+            </p>
+            <button class="button" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="registration" href="#">Новая регистрация</a>
+          </form>
+        </section>
+        <a class="basket" href="#">Корзина</a>
+      </div>
+    </div>
   </nav>
-  <div class="contacts">
-    <p>С 10 до 20, ежедневно<br>
-      8 812 450-25-25
-    </p>
+  <div class="main-header-contacts">
+    <p>С 10 до 20, ежедневно</p>
+    <p>8 812 450-25-25</p>
+
   </div>
 </header>
 <main class="page-catalog">
@@ -103,8 +107,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочно-кофейное с кусочками шоколада</span>
@@ -117,8 +122,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
@@ -134,7 +140,7 @@
         </a>
         <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочное крем-брюле с карамельной подливкой</span>
@@ -148,8 +154,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочное с брусничным джемом</span>
@@ -162,8 +169,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочно-черничное с цельными ягодами черники </span>
@@ -177,8 +185,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочно-лимонное с карамельной присыпкой </span>
@@ -191,8 +200,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочное с шоколадной стружкой</span>
@@ -205,8 +215,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочно-ванильное с кусочками шоколада</span>
@@ -219,8 +230,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочноe с ментоловым сиропом</span>
@@ -233,8 +245,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочное с кусочками черного шоколада</span>
@@ -247,8 +260,9 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
-      <li>
+      <li class="catalog-item product">
         <a href="catalog-item.html">
           <h3 class="product-title">
             <span>Сливочное с мятным сиропом</span>
@@ -261,11 +275,12 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
     </ul>
     <ul class="panagination-list">
       <li class="panagination-item"><a><span class="visually-hidden">Назад</span></a>
-      <li class="panagination-item pagination-item-current"><a>1</a></li>
+      <li class="pagination-item-current"><a>1</a></li>
       <li class="panagination-item"><a href="#">2</a></li>
       <li class="panagination-item"><a href="#">3</a></li>
       <li class="panagination-item"><a href="#">4</a></li>

@@ -76,29 +76,29 @@
         <p><img src="img/slider-list-1.png" width="647" height="584" alt="Первый слайдер с мороженым"></p>
         <h3>Крем-брюле и пломбир
           с малиновым джемом</h3>
-        <a class="button" href="#">Давайте оба!</a>
+        <a class="button button-slider" href="#">Давайте оба!</a>
       </li>
       <li class="slider-item">
         <p><img src="img/slider-list-2.png" width="644" height="582" alt="Второй слайдер с мороженым"></p>
         <h3>Шоколадный пломбир
           и лимонный сорбет </h3>
-        <a class="button" href="#">Давайте оба!</a>
+        <a class="button button-slider" href="#">Давайте оба!</a>
       </li>
       <li class="slider-item">
         <p><img src="img/slider-list-3.png" width="639" height="582" alt="Третий слайдер с мороженым"></p>
         <h3>Пломбир с помадкой
           и клубничный щербет</h3>
-        <a class="button" href="#">Давайте оба!</a>
+        <a class="button button-slider" href="#">Давайте оба!</a>
       </li>
     </ul>
-    <ul class="sliders-page">
-      <li class="slides-radio">
+    <ul class="slider-controls">
+      <li class="slider-radio">
         <button class="slider-button">1</button>
       </li>
-      <li class="slides-radio">
+      <li class="slider-radio">
         <button class="slider-button">2</button>
       </li>
-      <li class="slides-radio">
+      <li class="slider-radio">
         <button class="slider-button">3</button>
       </li>
     </ul>
@@ -185,6 +185,7 @@
             <span>/кг</span>
           </p>
         </a>
+        <a class="button" href="#">Быстрый просмотр</a>
       </li>
     </ul>
   </section>
@@ -221,9 +222,11 @@
   </article>
   <section class="subscription">
     <h2 class="visually-hidden">Подписка на рассылку</h2>
-    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
-      не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+
     <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+        Обещаем
+        не спамить и не слать всякой ненужной ерунды. Честно =) </p>
       <p>
         <label class="visually-hidden" for="subscription-email">Электронная почта</label>
         <input class="subscription-email" type="email" name="subscription-email" placeholder="Электронная почта"
@@ -235,7 +238,7 @@
   <section class="contacts">
     <h2 class="visually-hidden">Наше месторасположение</h2>
     <p class="contacts-map`"><img src="img/map-with-pin.jpg" width="1200" height="430"
-            alt="Адрес главного офиса:ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+                                  alt="Адрес главного офиса:ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
     <div class="contacts-info">
       <p>Адрес главного офиса и офлайн-магазина:</p>
       <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -249,23 +252,23 @@
 <footer class="main-footer">
   <div class="main-footer-social">
     <ul class="social-links">
-      <li><a class="social-links-item" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-      <li><a class="social-links-item" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-      <li><a class="social-links-item" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-      <li><a class="social-links-item" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li class="social-links-item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
+      <li class="social-links-item"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+      <li class="social-links-item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+      <li class="social-links-item"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
     </ul>
   </div>
   <div class="main-footer-info">
-    <ul class="footer-info-list">
-      <li><a class="info-link" href="#">Для поставщиков</a></li>
-      <li><a class="info-link" href="#">О производстве</a></li>
-      <li><a class="info-link" href="#">Наши документы</a></li>
-      <li><a class="info-link" href="#">Экологические стандарты</a></li>
+    <ul class="info-links">
+      <li class="info-links-item"><a href="#">Для поставщиков</a></li>
+      <li class="info-links-item"><a href="#">О производстве</a></li>
+      <li class="info-links-item"><a href="#">Наши документы</a></li>
+      <li class="info-links-item"><a href="#">Экологические стандарты</a></li>
     </ul>
   </div>
   <p class="main-footer-copyright">
     <a class="footer-copyright-info" href=" https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy.svg" width="108" height="38" alt="Логотип HTML Academy">
+      <img src="img/logo-htmlacademy.svg" width="125" height="40" alt="Логотип HTML Academy">
       Сделано в HTML Academy © 2017
     </a>
   </p>

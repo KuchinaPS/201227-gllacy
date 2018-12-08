@@ -132,6 +132,7 @@ a {
   border-radius: 30px;
   color: #ffffff;
   padding: 10px;
+  display: inline-block;
 }
 
 
@@ -615,6 +616,7 @@ input::placeholder {
 }
 
 .contacts-map {
+  margin: 0;
  position: absolute;
  top: 0;
  right: 0;
@@ -728,6 +730,3 @@ input[type="radio"].visually-hidden {
  padding-left: 13px;
 }
 
-a .button {
- display: inline-block;
-}

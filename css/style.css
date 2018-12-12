@@ -135,6 +135,7 @@ img {
   background-image: url("../img/search-black.svg");
 
 }
+
 .modal {
   background-color: #f8f7f4;
   color: #000000;
@@ -152,6 +153,7 @@ img {
   padding: 21px 16px;
 
 }
+
 .modal-search input {
   width: 310px;
   border: 1px solid #d3d3d2;
@@ -170,8 +172,9 @@ img {
   display: none;
   position: absolute;
   width: 277px;
-  background-color:#f8f7f4 ;
+  background-color: #f8f7f4;
 }
+
 .user-navigation-item:hover .modal-login {
   display: block;
 }
@@ -620,8 +623,8 @@ input::placeholder {
 }
 
 .site-navigation {
-  position: relative;.
-  width: 419px;
+  position: relative;
+. width: 419 px;
   display: flex;
   flex-wrap: wrap;
   /**padding-left: 23px;**/
@@ -646,7 +649,7 @@ input::placeholder {
 }
 
 .user-navigation-item {
- margin-left: 10px;
+  margin-left: 10px;
   margin-bottom: 2px;
   position: relative;
 }

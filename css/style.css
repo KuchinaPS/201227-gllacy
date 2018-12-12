@@ -169,27 +169,37 @@ img {
 
 
 .modal-login {
-  display: none;
+  display: block;
   position: absolute;
   width: 277px;
   right: -1px;
   top: 36px;
-  padding: 21px 19px;
   background-color: #f8f7f4;
   box-sizing: border-box;
+  padding-top: 21px;
+  padding-right: 19px;
+  padding-bottom: 0;
+  padding-left: 19px;
 }
 .modal-login input {
-  margin-bottom: 22px;
-  padding-top: 9px;
+  margin-bottom: 21px;
+  padding-top: 11px;
   padding-right: 44px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   padding-left: 14px;
   border-radius: 5px;
   border: 1px solid #d3d3d2;
 }
+.enter-link-container .registration {
+  margin-top: -3px;
+}
 .modal-login p {
   margin:0;
   padding: 0;
+}
+
+.button-enter {
+  margin-bottom: 20px;
 }
 .user-navigation-item:hover .modal-login {
   display: block;
@@ -220,11 +230,11 @@ img {
 
 .submenu-current {
   background-color: #d07058;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .catalog-submenu {
-  /** display: none;**/
+  display: none;
   list-style: none;
   background-color: #f8f7f4;
   color: #000000;
@@ -256,9 +266,11 @@ img {
 
 }
 
-.catalog-submenu-list a:last-child {
+.catalog-submenu-item:last-child a{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+
+
 }
 
 .site-navigation-item:hover .catalog-submenu {
@@ -286,6 +298,12 @@ img {
 .catalog-submenu-item-current a {
   color: #000000;
   background-color: #d07058;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  padding-top: 7px;
+  padding-left: 21px;
+  border-radius:0;
 
 }
 
@@ -314,10 +332,11 @@ img {
 }
 .enter-link-container {
   padding: 0;
-  margin-top: -14px;
+
   margin-bottom: -14px;
   margin-left: 15px;
   display: inline-block;
+  margin-top: -2px;
 }
 .button-slider {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);

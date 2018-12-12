@@ -147,7 +147,7 @@ img {
 .modal-search {
   position: absolute;
   width: 310px;
-  display: block;
+  display: none;
   left: -308px;
   bottom: -89px;
   padding: 21px 16px;
@@ -172,9 +172,25 @@ img {
   display: none;
   position: absolute;
   width: 277px;
+  right: -1px;
+  top: 36px;
+  padding: 21px 19px;
   background-color: #f8f7f4;
+  box-sizing: border-box;
 }
-
+.modal-login input {
+  margin-bottom: 22px;
+  padding-top: 9px;
+  padding-right: 44px;
+  padding-bottom: 13px;
+  padding-left: 14px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+}
+.modal-login p {
+  margin:0;
+  padding: 0;
+}
 .user-navigation-item:hover .modal-login {
   display: block;
 }
@@ -280,13 +296,29 @@ img {
   background: linear-gradient(to top, #e74a35, #f26843);
   border: none;
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.36);
-  border-radius: 30px;
+  border-radius: 20px;
   color: #ffffff;
-  padding: 10px;
+  padding: 10px 25px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.modal-login a {
+  font-size: 13px;
+  line-height: 24px;
+  color:#323232;
+  margin: 0;
+  padding: 0;
+
+}
+.enter-link-container {
+  padding: 0;
+  margin-top: -14px;
+  margin-bottom: -14px;
+  margin-left: 15px;
   display: inline-block;
 }
-
-
 .button-slider {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
@@ -762,10 +794,8 @@ input::placeholder {
   width: 1200px;
   margin: 0 auto;
   position: relative;
-  padding-top: 62px;
-  padding-bottom: 62px;
-  padding-right: 27px;
-  padding-left: 27px;
+  padding: 62px 27px;
+
   min-height: 430px;
   box-sizing: border-box;
 }

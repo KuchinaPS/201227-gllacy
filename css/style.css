@@ -364,8 +364,19 @@ img {
 .button-slider:active {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
-
-
+.button-banner-left {
+  margin-left: 354px;
+  margin-top: 25px;
+  margin-bottom: 22px;
+  padding: 11px 23px;
+  border-radius: 25px;
+}
+.button-banner-right {
+  margin-left: 330px;
+  margin-top: 25px;
+  padding: 11px 22px;
+  border-radius: 25px;
+}
 .slider-list,
 .slider-controls {
   list-style: none;
@@ -407,6 +418,7 @@ img {
   border-radius: 16px;
   padding-left: 18px;
   padding-top: 16px;
+  margin-left: 27px;
 
 }
 
@@ -421,7 +433,7 @@ img {
 .banners-list p {
   font-size: 18px;
   font-weight: 700;
-  width: 511px;
+  width: 513px;
   margin-top: 15px;
 }
 
@@ -526,7 +538,7 @@ img {
   min-height: 210px;
 }
 
-input::placeholder {
+.modal input::placeholder {
   color: #999999;
   font-size: 14px;
   line-height: 24px;
@@ -739,13 +751,11 @@ input::placeholder {
 }
 
 .banners {
-  background-color: #ffbc9e;
-  margin-bottom: 40px;
+   margin-bottom: 40px;
 }
 
 .banners-list {
-  background-color: #d07058;
-  display: flex;
+   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;

@@ -314,7 +314,7 @@ img {
   background: linear-gradient(to top, #e74a35, #f26843);
   border: none;
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.36);
-  border-radius: 20px;
+  border-radius: 30px;
   color: #ffffff;
   padding: 10px 25px;
   display: inline-block;
@@ -501,8 +501,11 @@ img {
 
 .news {
   background-image: url("../img/news-background.jpg");
+  background-repeat:no-repeat;
   width: 558px;
   border-radius: 15px;
+  margin: 2px;
+
 
 }
 
@@ -528,8 +531,9 @@ img {
 
 .subscription {
   background-image: url("../img/post-background.png");
+  background-repeat: no-repeat;
   width: 560px;
-  height: 220px;
+  margin: 2px;
   color: #5a5a5a;
   border-radius: 15px;
   box-sizing: border-box;
@@ -540,8 +544,8 @@ img {
   background-color: #f8f7f4;
   border-radius: 10px;
   box-sizing: border-box;
-  margin: 4px 5px;
-  padding: 15px 23px 2px;
+  margin: 5px 5px;
+  padding: 15px 20px 2px;
   position: relative;
   min-height: 210px;
 }
@@ -844,7 +848,6 @@ img {
   margin-bottom: 40px;
   margin-left: -1px;
   padding: 0;
-  background-color: plum;
   display: flex;
   justify-content: space-between;
 }
@@ -856,9 +859,27 @@ img {
 }
 
 .subscription-form p {
-  padding-left: 20px;
+  margin-left: 2px;
+  margin-top: 12px;
+  display: inline-block;
+}
+.subscription-email {
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  padding-top: 12px;
+  padding-right: 169px;
+  padding-bottom: 12px;
+  padding-left: 13px;
+  margin-top: 9px;
+
 }
 
+.button-subscription {
+  margin-left: 11px;
+  padding-right: 18px;
+  padding-bottom: 13px;
+  padding-left: 16px;
+}
 .contact-container {
   width: 1200px;
   margin: 0 auto;

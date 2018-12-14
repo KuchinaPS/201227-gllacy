@@ -489,6 +489,10 @@ img {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+  margin: 0;
+  letter-spacing: 0.2px;
+  padding-left: 18px;
+  padding-top: 25px;
 }
 
 .features-list {
@@ -687,7 +691,7 @@ img {
 
 .site-navigation {
   position: relative;
-. width: 419 px;
+  width: 419px;
   display: flex;
   flex-wrap: wrap;
   /**padding-left: 23px;**/
@@ -783,24 +787,55 @@ img {
 
 .features {
   margin-bottom: 40px;
+
 }
 
 .features-list {
-  background-color: bisque;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0;
+  margin: 0;
 
 
 }
 
 .features-item {
   width: 496px;
-  padding-left: 77px;
-  padding-top: 25px;
+
+}
+.features-item-ice {
+  padding-top: 22px;
+  width: 477px;
+  background-image: url(../img/ice.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 8px;
+  padding-left: 75px;
+}
+.features-item-cow {
+  background-image: url(../img/cow.svg);
+  background-repeat: no-repeat;
+  background-position: 32px 10px;
+  padding-left: 90px;
+  padding-top: 22px;
 }
 
+.features-item-eco {
+  background-image: url(../img/leaf.svg);
+  background-repeat: no-repeat;
+  background-position: 18px 9px;
+  padding-left: 75px;
+  padding-top: 22px;
+}
+.features-item-term {
+  background-image: url(../img/termometr.svg);
+  background-repeat: no-repeat;
+  background-position: 12px 8px;
+  width: 470px;
+  padding-left: 72px;
+  padding-top: 22px;
+}
 .container-information {
   margin-bottom: 40px;
   padding: 0;

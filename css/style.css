@@ -501,9 +501,8 @@ img {
 
 .news {
   background-image: url("../img/news-background.jpg");
-  width: 560px;
-  height: 220px;
-  border-radius: 16px;
+  width: 558px;
+  border-radius: 15px;
 
 }
 
@@ -512,6 +511,9 @@ img {
   line-height: 22px;
   font-weight: 500;
   color: #323232;
+  margin: 0;
+  padding-left: 1px;
+  padding-top: 24px;
 }
 
 .news a {
@@ -520,6 +522,8 @@ img {
   font-weight: 700;
   color: #323232;
   text-decoration: underline;
+  display: block;
+  padding-top: 4px;
 }
 
 .subscription {
@@ -838,6 +842,7 @@ img {
 }
 .container-information {
   margin-bottom: 40px;
+  margin-left: -1px;
   padding: 0;
   background-color: plum;
   display: flex;
@@ -846,8 +851,8 @@ img {
 
 .container-left {
   width: 281px;
-  padding-left: 20px;
-  background-color: aliceblue;
+  padding-left: 18px;
+
 }
 
 .subscription-form p {

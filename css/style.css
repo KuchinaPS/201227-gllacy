@@ -528,6 +528,7 @@ img {
   padding-right: 13px;
   padding-left: 13px;
   margin-left: -13px;
+  margin-right: -13px;
   display: flex;
 
 }
@@ -857,12 +858,11 @@ img {
 .hits {
   margin-right: -13px;
   margin-left: -13px;
-  margin-bottom: 21px;
+  margin-bottom: -36px;
 
 }
 
 .hits-list {
-  background-color: lightsteelblue;
   display: flex;
   justify-content: space-between;
   margin: 0;

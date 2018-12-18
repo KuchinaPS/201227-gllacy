@@ -181,6 +181,7 @@ img {
   padding-bottom: 0;
   padding-left: 19px;
 }
+
 .modal-login input {
   margin-bottom: 21px;
   padding-top: 11px;
@@ -190,17 +191,20 @@ img {
   border-radius: 5px;
   border: 1px solid #d3d3d2;
 }
+
 .enter-link-container .registration {
   margin-top: -3px;
 }
+
 .modal-login p {
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
 .button-enter {
   margin-bottom: 20px;
 }
+
 .user-navigation-item:hover .modal-login {
   display: block;
 }
@@ -266,7 +270,7 @@ img {
 
 }
 
-.catalog-submenu-item:last-child a{
+.catalog-submenu-item:last-child a {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 
@@ -303,7 +307,7 @@ img {
   display: block;
   padding-top: 7px;
   padding-left: 21px;
-  border-radius:0;
+  border-radius: 0;
 
 }
 
@@ -322,14 +326,16 @@ img {
   line-height: 24px;
   font-weight: 700;
 }
+
 .modal-login a {
   font-size: 13px;
   line-height: 24px;
-  color:#323232;
+  color: #323232;
   margin: 0;
   padding: 0;
 
 }
+
 .enter-link-container {
   padding: 0;
 
@@ -338,6 +344,7 @@ img {
   display: inline-block;
   margin-top: -2px;
 }
+
 .button-slider {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
@@ -364,6 +371,7 @@ img {
 .button-slider:active {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
+
 .button-banner-left {
   margin-left: 354px;
   margin-top: 25px;
@@ -371,12 +379,14 @@ img {
   padding: 11px 23px;
   border-radius: 25px;
 }
+
 .button-banner-right {
   margin-left: 330px;
   margin-top: 25px;
   padding: 11px 22px;
   border-radius: 25px;
 }
+
 .slider-list,
 .slider-controls {
   list-style: none;
@@ -437,28 +447,47 @@ img {
   margin-top: 15px;
 }
 
+.product {
+  list-style: none;
+  width: 267px;
+  padding-right: 13px;
+  padding-left: 13px;
+  position: relative;
+
+}
+
+.product-image {
+  margin: 0;
+  position: relative;
+}
+
+.product-image::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background: #fff url(../img/hit.svg) no-repeat;
+  border-radius: 50%;
+}
+
 .product-image img {
   border-radius: 50%;
 }
 
-.product {
-  list-style: none;
-
-}
-
-
-.product a {
+.product-link {
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .product-title {
   font-size: 16px;
   font-weight: 500;
   text-decoration: underline;
-}
-
-.product:hover {
-  background-color: #9bafa3;
+  text-align: center;
+  order: 2;
+  margin-top: 9px;
 }
 
 .product-price {
@@ -466,6 +495,8 @@ img {
   line-height: 45px;
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
+  position: absolute;
+  bottom: 36px;
 
 }
 
@@ -474,8 +505,45 @@ img {
   line-height: 45px;
   font-weight: 700;
   color: #ffffff;
+  margin-left: -8px;
 }
 
+.button-product {
+  position: absolute;
+  bottom: 39px;
+  right: 45px;
+  width: 170px;
+  margin-bottom: -18px;
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  visibility: hidden;
+
+}
+
+.temp-wrapper {
+
+  padding-bottom: 57px;
+  padding-right: 13px;
+  padding-left: 13px;
+  margin-left: -13px;
+  display: flex;
+
+}
+
+.product:hover .temp-wrapper {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  z-index: 20;
+  width: 267px;
+  position: absolute;
+}
+
+
+.product:hover .button {
+  visibility: visible;
+}
 
 .features {
   background-image: url("../img/pattern-wafer-full.jpg");
@@ -507,6 +575,7 @@ img {
   margin-bottom: 2px;
   margin-top: 2px;
 }
+
 .news-title {
   font-size: 16px;
   line-height: 22px;
@@ -558,6 +627,7 @@ img {
 .contacts-info {
   background-color: #fefefe;
   border-radius: 16px;
+  margin-top: -4px;
 
 }
 
@@ -565,7 +635,10 @@ img {
   font-size: 14px;
   line-height: 20px;
   color: #323232;
-
+  padding-left: 23px;
+  padding-top: 18px;
+  width: 172px;
+  margin: 0;
 }
 
 .contacts-info b {
@@ -573,6 +646,16 @@ img {
   line-height: 24px;
   font-weight: 700;
   color: #323232;
+  padding-left: 23px;
+  width: 233px;
+  display: block;
+}
+
+.button-info {
+  margin-left: 24px;
+  width: 201px;
+  margin-top: 13px;
+
 }
 
 .main-footer {
@@ -761,21 +844,20 @@ img {
 }
 
 .banners {
-   margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .banners-list {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
 .hits {
-  background-color: cornflowerblue;
-  margin-bottom: 40px;
   margin-right: -13px;
   margin-left: -13px;
+  margin-bottom: 21px;
 
 }
 
@@ -785,11 +867,9 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 5px;
 }
 
-.product {
-  width: 267px;
-}
 
 .features {
   margin-bottom: 40px;
@@ -811,6 +891,7 @@ img {
   width: 496px;
 
 }
+
 .features-item-ice {
   padding-top: 22px;
   width: 477px;
@@ -819,6 +900,7 @@ img {
   background-position: 18px 8px;
   padding-left: 75px;
 }
+
 .features-item-cow {
   background-image: url(../img/cow.svg);
   background-repeat: no-repeat;
@@ -834,6 +916,7 @@ img {
   padding-left: 75px;
   padding-top: 22px;
 }
+
 .features-item-term {
   background-image: url(../img/termometr.svg);
   background-repeat: no-repeat;
@@ -842,6 +925,7 @@ img {
   padding-left: 72px;
   padding-top: 22px;
 }
+
 .container-information {
   margin-bottom: 40px;
   margin-left: -1px;
@@ -861,6 +945,7 @@ img {
   margin-top: 12px;
   display: inline-block;
 }
+
 .subscription-email {
   border-radius: 5px;
   border: 1px solid #d3d3d2;
@@ -878,6 +963,7 @@ img {
   padding-bottom: 13px;
   padding-left: 16px;
 }
+
 .contact-container {
   width: 1200px;
   margin: 0 auto;
@@ -894,18 +980,19 @@ img {
   top: 0;
   right: 0;
 }
+
 .contacts-map img {
   margin-top: -4px;
   margin-right: 1px;
   margin-bottom: -2px;
   margin-left: -3px;
 }
+
 .contacts-info {
   width: 302px;
   position: relative;
   margin-left: auto;
-  padding-left: 25px;
-  padding-top: 25px;
+  padding-top: 11px;
   padding-bottom: 30px;
 }
 
@@ -952,6 +1039,8 @@ img {
   padding-left: 22px;
   padding-bottom: 7px;
   display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 
@@ -1001,10 +1090,3 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 }
-
-.product {
-  width: 267px;
-  padding-right: 13px;
-  padding-left: 13px;
-}
-

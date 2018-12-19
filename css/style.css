@@ -1014,13 +1014,12 @@ img {
 
 
 .main-footer-social {
-  background-color: teal;
   width: 267px;
   margin: 0;
 }
 
 .main-footer-info {
-  background-color: darkgoldenrod;
+  background-color: teal;
   width: 560px;
   margin: 0;
 
@@ -1089,4 +1088,48 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+.social-links-item {
+  position: relative;
+}
+
+.social-links-item a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #c2cec7;
+  opacity: 0.8;
+
+}
+.social-links-item-tw {
+  background-image: url("../img/twitter-button.svg");
+  position: absolute;
+  left: -39px;
+  top: -7px;
+}
+.social-links-item-inst {
+  background-image: url("../img/instagram-button.svg");
+  position: absolute;
+  left: 11px;
+  top: -7px;
+}
+.social-links-item-fb {
+  background-image: url("../img/facebook-button.svg");
+  position: absolute;
+  left: 60px;
+  top: -7px;
+}
+.social-links-item-vk {
+  background-image: url("../img/vkontacte-button.svg");
+  position: absolute;
+  left: 108px;
+  top: -7px;
+}
+.social-links-item a:hover,
+.social-links-item a:focus{
+  opacity: 1;
+}
+.social-links-item a:active {
+  opacity: 0.6;
 }

@@ -313,7 +313,7 @@
 </footer>
 <section class="modal modal-feedback">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <p><b>Мы обязательно вам ответим!</b></p>
+  <p class="modal-feedback-title"><b>Мы обязательно вам ответим!</b></p>
   <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
       <label class="visually-hidden" for="user-name">Ваше имя</label>
@@ -325,11 +325,12 @@
     </p>
     <p>
       <label class="visually-hidden" for="user-feedback">Напишите нам</label>
-      <textarea class="feedback-text" name="feedback" id="user-feedback">Напишите что-нибудь...</textarea>
+      <textarea cols="41" rows="6" class="feedback-text" name="feedback" id="user-feedback">Напишите что-нибудь...</textarea>
     </p>
-    <button class="button" type="submit">Отправить</button>
+    <button class="button button-modal" type="submit">Отправить</button>
     <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </form>
 </section>
+<div class="overlay"></div>
 </body>
 </html>

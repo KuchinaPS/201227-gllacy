@@ -158,7 +158,6 @@ img {
   width: 310px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-
   padding: 12px 13px;
 
 }
@@ -169,7 +168,7 @@ img {
 
 
 .modal-login {
-  display: block;
+  display: none;
   position: absolute;
   width: 277px;
   right: -1px;
@@ -1158,4 +1157,89 @@ input[type="radio"].visually-hidden {
 .footer-copyright-logo img {
   margin-top: -11px;
   margin-left: 65px;
+}
+.modal-feedback {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 477px;
+  padding-left: 25px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  margin-left: -239px;
+  margin-top: -226px;
+  z-index: 2;
+  display: none;
+
+}
+.modal-feedback-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 17px;
+  }
+.modal-feedback p {
+  margin: 0;
+}
+.modal-feedback input,
+.modal-feedback textarea{
+
+  border-radius: 5px;
+  border: 1px solid #d3d3d2;
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 13px;
+  padding-top: 11px;
+  padding-right: 69px;
+  padding-bottom: 8px;
+  margin-bottom: 0px;
+  margin-top: 19px;
+
+}
+.button-modal {
+  margin: 9px;
+  margin-left: 289px;
+  margin-bottom: 6px;
+}
+.button-close {
+
+  position: absolute;
+  top: 11px;
+  right: 24px;
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #f8f7f4;
+}
+.button-close::before,
+.button-close::after {
+  content: "";
+
+  position: absolute;
+
+  width: 23px;
+  height: 3px;
+
+  background-color: #231f20;
+}
+.button-close::before {
+  transform: rotate(45deg);
+}
+
+.button-close::after {
+  transform: rotate(-45deg);
+}
+.overlay {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: none;
 }

@@ -219,8 +219,8 @@ img {
   width: 539px;
   display:none;
   position: absolute;
-  top: 38px;
-  right: -17px;
+  top: 37px;
+  right: 1px;
   z-index: 20;
 }
 .basket-table a {
@@ -336,7 +336,7 @@ img {
 
 .submenu-current {
   background-color: #d07058;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .catalog-submenu {
@@ -553,7 +553,7 @@ img {
 .catalog{
   margin-right: -13px;
   margin-left: -13px;
-  margin-bottom: -36px;
+  margin-bottom: -37px;
 
 }
 
@@ -563,7 +563,7 @@ img {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  padding-top: 5px;
+
 }
 
 .product {
@@ -574,7 +574,9 @@ img {
   position: relative;
 
 }
-
+.catalog-item {
+  margin-bottom: -42px;
+}
 .product-image,
 .product-image-inner{
   margin: 0;
@@ -623,7 +625,7 @@ img {
   font-weight: 700;
   text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
   position: absolute;
-  bottom: 36px;
+  top: 163px;
 
 }
 
@@ -649,7 +651,7 @@ img {
 
 }
 
-.temp-wrapper {
+.product-wrapper {
 
   padding-bottom: 57px;
   padding-right: 13px;
@@ -657,10 +659,11 @@ img {
   margin-left: -13px;
   margin-right: -13px;
   display: flex;
+  padding-top: 5px;
 
 }
 
-.product:hover .temp-wrapper {
+.product:hover .product-wrapper {
  background-color: rgba(248, 247, 244, 0.2);
   border-radius: 5px;
   z-index: 20;
@@ -688,8 +691,8 @@ img {
   font-weight: 500;
   margin: 0;
   letter-spacing: 0.2px;
-  padding-left: 18px;
-  padding-top: 25px;
+  padding-left: 21px;
+  padding-top: 23px;
 }
 
 .features-list {
@@ -850,15 +853,17 @@ img {
   line-height: 16px;
   margin-left: 0;
   margin-right: auto;
+  margin-top: 26px;
   display: flex;
   width: 267px;
   padding-left: 0;
+  position: relative;
 
 }
 
 .breadcrumbs a {
   color: #ffffff;
-  padding-right: 22px;
+  padding-right: 7px;
 }
 
 .breadcrumbs a:hover,
@@ -866,37 +871,91 @@ img {
 .breadcrumbs a:active {
   color: #ffbc9e;
 }
+.breadcrumbs-link::after {
+  content: "»";
+  font-size: 14px;
+  padding-left: 8px;
 
-.panagination-list {
-  list-style: none;
+}
+
+.pagination-list {
   background-color: #f6b5a5;
-  display: flex;
-  justify-content: flex-end;
-  width: 267px;
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.panagination-list a {
-  color: #ffffff;
-  line-height: 18px;
-  font-weight: 500;
-  padding-right: 10px;
+  position: relative;
+  padding: 0;
+  font-size: 0;
   text-align: right;
+  list-style: none;
+
+
 }
 
-.panagination-item a:hover {
+.pagination-list a {
+  display: block;
+  min-width: 26px;
+  height: 22px;
+  padding-top: 4px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-
+  text-align: center;
 }
-
-.pagination-item-current a {
+.pagination-item {
+  display: inline-block;
+  margin-right: 3px;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 18px;
+}
+.pagination-item-current a{
   color: #323232;
   background-color: #ffffff;
-  border-radius: 50%;
 }
+ .pagination-item a:hover{
+   color: #ffffff;
+   background-color: rgba(255,255,255,0.2);
+ }
+.pagination-back::before,
+.pagination-back::after {
+  content: "";
+  position: absolute;
+  width:10px;
+  height: 1px;
+  background-color: rgba(255,255,255, 0.2);
+
+}
+.pagination-back::before {
+  transform: rotate(-40deg);
+  left: 105px;
+  top: 7px;
+}
+
+.pagination-back::after {
+  transform: rotate(40deg);
+  left: 105px;
+  top: 13px;
+}
+
+.pagination-next::before,
+.pagination-next::after {
+  content: "";
+  position: absolute;
+  width:9px;
+  height: 1px;
+  background-color: rgba(255,255,255, 1);
+
+}
+.pagination-next::before {
+  transform: rotate(40deg);
+  right: 13px;
+  top: 7px;
+}
+
+.pagination-next::after {
+  transform: rotate(-40deg);
+  right: 13px;
+  top: 13px;
+}
+
+
 
 .slider {
   display: none;
@@ -983,7 +1042,13 @@ img {
   margin: 0 auto;
   padding: 0 auto;
 }
-
+.page-catalog h1 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: -19px;
+  margin-bottom: 193px;
+}
 .banners {
   margin-bottom: 35px;
 }
@@ -997,7 +1062,7 @@ img {
 
 
 .features {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
 }
 
@@ -1219,7 +1284,7 @@ input[type="radio"].visually-hidden {
    display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
+  margin-bottom: 49px;
   padding: 0;
 }
 .social-links-item {
@@ -1281,7 +1346,7 @@ input[type="radio"].visually-hidden {
   margin-left: -239px;
   margin-top: -226px;
   z-index: 2;
-
+  display: none;
 
 }
 .modal-feedback-title {

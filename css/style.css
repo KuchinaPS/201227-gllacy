@@ -879,7 +879,7 @@ img {
 }
 
 .pagination-list {
-  background-color: #f6b5a5;
+
   position: relative;
   padding: 0;
   font-size: 0;
@@ -891,7 +891,7 @@ img {
 
 .pagination-list a {
   display: block;
-  min-width: 26px;
+  min-width: 27px;
   height: 22px;
   padding-top: 4px;
   border-radius: 50%;
@@ -924,13 +924,13 @@ img {
 }
 .pagination-back::before {
   transform: rotate(-40deg);
-  left: 105px;
+  right: 193px;
   top: 7px;
 }
 
 .pagination-back::after {
   transform: rotate(40deg);
-  left: 105px;
+  right: 193px;
   top: 13px;
 }
 

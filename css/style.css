@@ -1052,8 +1052,7 @@ img {
   position: relative;
   text-align: center;
   padding-top: 0;
-  margin-top: -135px;
-  margin-bottom: -255px;
+  margin-bottom: 762px;
   color: #ffffff;
 
 }
@@ -1075,7 +1074,7 @@ img {
   font-weight: 800;
   position: absolute;
 
-  bottom: 346px;
+  bottom: 108px;
 
   left: 223px;
 }
@@ -1085,7 +1084,7 @@ img {
   padding: 12px 44px;
   position: absolute;
   right: 433px;
-  bottom: 280px;
+  bottom: 41px;
 
   font-weight: 600;
   font-size: 31px;
@@ -1117,7 +1116,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 302px;
+  bottom: 62px;
   left: 0;
   z-index: 20;
 
@@ -1137,7 +1136,9 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
-
+.slider-controls label:hover {
+  background-color: rgba(255,255,255,0.4);
+}
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-list-1.png");
@@ -1270,6 +1271,7 @@ img {
 
 .banners {
   margin-bottom: 35px;
+  margin-top: -233px;
 }
 
 .banners-list {

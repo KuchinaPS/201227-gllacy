@@ -627,9 +627,10 @@ img {
   text-decoration: underline;
   text-align: center;
   order: 2;
-  margin-top: 9px;
+  margin-top: 7px;
   display: block;
   width: 258px;
+  margin-bottom: 18px;
   padding-left: 5px;
 }
 
@@ -726,6 +727,7 @@ img {
   border-radius: 15px;
   margin-bottom: 2px;
   margin-top: 2px;
+  margin-left: -1px;
 }
 
 .news-title {
@@ -783,7 +785,16 @@ img {
   margin-top: -4px;
 
 }
+.contacts-info p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
 
+  margin-top: 2px;
+  margin-bottom: 1px;
+  margin-left: -1px;
+
+}
 .contacts-info-adress {
   padding-top: 17px;
   padding-left: 26px;
@@ -792,17 +803,17 @@ img {
 
 .contacts-info-phone {
   padding-top: 20px;
-  padding-bottom: 17px;
-  padding-left: 25px;
+  padding-bottom: 12px;
+  padding-left: 26px;
+  margin-top: -4px;
+  margin-bottom: 6px;
 }
 
-.contacts-info p {
-  font-size: 14px;
-  line-height: 20px;
-  color: #323232;
-  margin: 1px;
-
+.contacts-info-phone p {
+  margin-bottom: 4px;
 }
+
+
 
 .contacts-info b {
   font-size: 18px;
@@ -816,7 +827,8 @@ img {
 .button-info {
   margin-left: 26px;
   width: 201px;
-  margin-top: 9px;
+  margin-top: 2px;
+  padding-bottom: 11px;
 
 }
 
@@ -826,6 +838,7 @@ img {
 
 .social-links {
   list-style: none;
+  margin-top: 14px;
 }
 
 .social-links-item > a {
@@ -860,7 +873,7 @@ img {
 .footer-copyright-info {
   color: #ffffff;
   margin-top: 0;
-  margin-left: 64px;
+  margin-left: 66px;
 }
 
 .footer-copyright-info a {
@@ -944,25 +957,28 @@ img {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus{
+.pagination-item a:focus {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 .pagination-item:first-child a:hover,
 .pagination-item:first-child a:focus,
 .pagination-item:first-child a:active,
 .pagination-item:last-child a:hover,
 .pagination-item:last-child a:focus,
-.pagination-item:last-child a:active{
+.pagination-item:last-child a:active {
   background-color: transparent;
 }
+
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
-.pagination-item-current a:active{
+.pagination-item-current a:active {
   color: #323232;
   background-color: #ffffff;
 }
-.pagination-item a:active{
+
+.pagination-item a:active {
   color: #323232;
   background-color: #ffffff;
 }
@@ -1030,7 +1046,7 @@ img {
   background-repeat: no-repeat;
   background-position: top center;
 
- transition: background-image 0.5s ease, background-color 0.5s ease;
+  transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
 
@@ -1048,6 +1064,7 @@ img {
 .site-wrapper::after {
   background-image: url("../img/slider-list-3.png");
 }
+
 .slider {
   position: relative;
   text-align: center;
@@ -1136,9 +1153,11 @@ img {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .slider-controls label:hover {
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(255, 255, 255, 0.4);
 }
+
 #product-1:checked ~ .site-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slider-list-1.png");
@@ -1210,7 +1229,12 @@ img {
   height: 1px;
   background-color: #f7f6f3;
 }
-
+.site-navigation-item-current > a:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: transparent;
+}
 .user-navigation {
   margin: 0 0;
 
@@ -1352,7 +1376,7 @@ img {
 }
 
 .subscription-form p {
-  margin-left: 2px;
+  margin-left: 1px;
   margin-top: 12px;
   display: inline-block;
 }
@@ -1370,9 +1394,10 @@ img {
 
 .button-subscription {
   padding-right: 18px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   padding-left: 20px;
-  margin-left: 3px;
+  margin-left: 7px;
+  margin-top: -3px;
 }
 
 .contact-container {
@@ -1440,7 +1465,7 @@ img {
   display: flex;
   width: 365px;
   flex-wrap: wrap;
-  margin-left: 107px;
+  margin-left: 108px;
   margin-right: 127px;
   margin-top: 6px;
 
@@ -1465,13 +1490,13 @@ img {
   width: 15px;
   height: 13px;
   background-image: url("../img/heart.svg");
-  left: 0px;
+  left: -2px;
   top: 3px;
 }
 
 .main-footer-copyright {
   margin: 0;
-  width: 267px;
+  width: 270px;
   padding-left: 78px;
   font-size: 12px;
   line-height: 18px;
@@ -1566,8 +1591,8 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright-logo img {
-  margin-top: -11px;
-  margin-left: 65px;
+  margin-top: -10px;
+  margin-left: 68px;
 }
 
 .modal-feedback {

@@ -943,18 +943,31 @@ img {
   background-color: #ffffff;
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus{
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
 }
 .pagination-item:first-child a:hover,
-.pagination-item:last-child a:hover{
+.pagination-item:first-child a:focus,
+.pagination-item:first-child a:active,
+.pagination-item:last-child a:hover,
+.pagination-item:last-child a:focus,
+.pagination-item:last-child a:active{
   background-color: transparent;
 }
-.pagination-item-current a:hover {
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active{
   color: #323232;
   background-color: #ffffff;
 }
+.pagination-item a:active{
+  color: #323232;
+  background-color: #ffffff;
+}
+
+
 .pagination-back::before,
 .pagination-back::after {
   content: "";

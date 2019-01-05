@@ -1,3 +1,4 @@
+
 body {
   min-width: 1200px;
   margin: 0;
@@ -170,6 +171,7 @@ img {
 .modal-search input {
   box-sizing: border-box;
   width: 311px;
+  height: 42px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
   padding: 12px 14px;
@@ -199,10 +201,11 @@ img {
   padding-bottom: 14px;
   padding-left: 13px;
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
   width: 240px;
   box-sizing: border-box;
   margin-left: 18px;
+  height: 40px;
 }
 
 .enter-link-container .registration {
@@ -807,12 +810,21 @@ img {
   line-height: 24px;
   font-weight: 400;
 }
+
 .modal input:hover,
-.subscription input:hover {
-  border: 2px solid #c7c6c5;
-  box-sizing: border-box;
+.subscription input:hover{
+  border-color:#c7c6c5;
+  -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
+  box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
+.modal input:focus,
+.subscription input:focus{
+  border-color: #8fbdec;
+  -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
+  box-shadow: inset 0 0 0 1px #8fbdec;
+  outline: none;
+}
 .contacts-info {
   background-color: #fefefe;
   border-radius: 16px;
@@ -1416,7 +1428,7 @@ img {
 
 .subscription-email {
   border-radius: 5px;
-  border: 2px solid #d3d3d2;
+  border: 1px solid #d3d3d2;
   padding-top: 12px;
   padding-right: 169px;
   padding-bottom: 12px;
@@ -1534,8 +1546,36 @@ img {
   font-size: 12px;
   line-height: 18px;
 }
+.visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
+}
+/*.visually-hidden:not(:focus):not(:active),*/
+/*input[type="checkbox"].visually-hidden,*/
+/*input[type="radio"].visually-hidden {*/
+  /*position: absolute;*/
+
+  /*width: 1px;*/
+  /*height: 1px;*/
+  /*margin: -1px;*/
+  /*border: 0;*/
+  /*padding: 0;*/
+  /*white-space: nowrap;*/
+  /*clip-path: inset(100%);*/
+  /*clip: rect(0 0 0 0);*/
+  /*overflow: hidden;*/
+
+/*}*/
 
 .main-header-inner {
   margin-bottom: 10px;
@@ -1934,19 +1974,16 @@ img {
 .topping-label {
   padding-right: 18px;
 }
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html {
+    overflow: hidden;
+    height: 100%;
+  }
+  body {
+    overflow: auto;
+    height: 100%;
+  }
+  .button-banner-right {
+    margin-top: 0px;
+  }
 }

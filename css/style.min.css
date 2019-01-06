@@ -1897,14 +1897,6 @@ img {
   padding-right: 18px;
 }
 
-.fatness-input:hover + label,
-.fatness-input:focus + label {
-  color: rgba(255, 255, 255, 1);
-}
-
-.fatness-input:disabled + label {
-  color: rgba(255, 255, 255, 0.2);
-}
 
 .price-title {
   margin-left: 12px;
@@ -1978,20 +1970,38 @@ img {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 3px #ffffff;
-  box-shadow: 0 0 0 3px #ffffff;
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.8);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.8);
   vertical-align: text-top;
 }
-
+.filter-form input[type=radio] + label:hover::before,
+.filter-form input[type=radio] + label:focus::before{
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,1);
+  box-shadow: 0 0 0 3px rgba(255,255,255,1);
+}
+.filter-form input[type=radio] + label:disabled::before {
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+}
 .filter-form input[type=radio]:checked + label::before {
-  background-color: #ffffff;
+  background-color:rgba(255,255,255,0.8);
   border: 3px solid #aabcb2;
-  -webkit-box-shadow: 0 0 0 3px #ffffff;
-  box-shadow: 0 0 0 3px #ffffff;
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.8);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.8);
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.filter-form input[type=radio]:checked + label:hover::before,
+.filter-form input[type=radio]:checked + label:focus::before{
+  background-color:rgba(255,255,255,1);
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,1);
+  box-shadow: 0 0 0 3px rgba(255,255,255,1);
+}
+.filter-form input[type=radio]:checked + label:disabled::before{
+  background-color:rgba(255,255,255,1);
+  -webkit-box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+}
 .filter-form input[type=checkbox] + label::before {
   content: "";
   width: 20px;
@@ -2006,16 +2016,25 @@ img {
   box-sizing: border-box;
   vertical-align: text-top;
 }
-
-
+.filter-form input[type=checkbox] + label:hover::before,
+.filter-form input[type=checkbox] + label:focus::before{
+  opacity: 1;
+}
+.filter-form input[type=checkbox] + label:disabled::before{
+  opacity:0.4;
+}
 .filter-form input[type=checkbox]:checked + label::before {
   background-image: url(../img/checkboxs-on.svg);
   background-repeat: no-repeat;
   background-position: -4px -2px;
-
-
 }
-
+.filter-form input[type=checkbox]:checked + label:hover::before,
+.filter-form input[type=checkbox]:checked + label:focus::before{
+  opacity: 1;
+}
+.filter-form input[type=checkbox]:checked + label:disabled::before{
+  opacity: 0.4;
+}
 .button-filter {
   font-family: inherit;
   border: 2px solid #ffffff;

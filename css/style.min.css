@@ -163,7 +163,7 @@ img {
   width: 341px;
   display: none;
   left: -308px;
-  bottom: -86px;
+  bottom: -77px;
   padding: 20px 15px;
   box-sizing: border-box;
 }
@@ -1297,6 +1297,7 @@ img {
   margin-left: 10px;
   margin-bottom: 2px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 

@@ -1121,7 +1121,7 @@ img {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -28px;
+  bottom: -30px;
   width: 1148px;
   margin-left: 10px;
   height: 1px;
@@ -1536,7 +1536,7 @@ img {
 }
 
 .main-footer-container-inner {
-  margin-top: 55px;
+  margin-top: 59px;
 }
 
 .main-footer-social {
@@ -1554,9 +1554,9 @@ img {
   display: flex;
   width: 365px;
   flex-wrap: wrap;
-  margin-left: 108px;
+  margin-left: 110px;
   margin-right: 127px;
-  margin-top: 6px;
+  margin-top: 5px;
 
 }
 
@@ -1639,7 +1639,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 49px;
+  margin-bottom: 47px;
   padding: 0;
 }
 
@@ -1829,7 +1829,7 @@ img {
 }
 
 .filters {
-  margin-bottom: 24px;
+  margin-bottom: 23px;
   margin-left: 16px;
 }
 
@@ -2048,7 +2048,18 @@ img {
   text-align: center;
   margin-left: -2px;
 }
-
+.button-filter:hover,
+.button-filter:focus{
+  background-color: rgba(255, 255, 255, 1);
+  color: #323232;
+  border: none;
+}
+.button-filter:active{
+  background-color: #eaeaea;
+  color: #323232;
+  border: none;
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+}
 .fatness-wrapper {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;

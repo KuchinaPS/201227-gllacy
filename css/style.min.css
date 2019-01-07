@@ -449,6 +449,7 @@ img {
 
 .catalog-submenu-item:first-child {
   padding-top: 6px;
+
 }
 
 .catalog-submenu-item a:hover,
@@ -467,9 +468,15 @@ img {
   font-size: 14px;
   line-height: 16px;
   display: block;
-  padding-top: 7px;
+  padding: 0;
   padding-left: 21px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
   border-radius: 0;
+
+}
+.catalog-submenu-item-current:first-child {
+  padding-top: 6px;
 
 }
 
@@ -1606,22 +1613,6 @@ img {
 
 }
 
-/*.visually-hidden:not(:focus):not(:active),*/
-/*input[type="checkbox"].visually-hidden,*/
-/*input[type="radio"].visually-hidden {*/
-/*position: absolute;*/
-
-/*width: 1px;*/
-/*height: 1px;*/
-/*margin: -1px;*/
-/*border: 0;*/
-/*padding: 0;*/
-/*white-space: nowrap;*/
-/*clip-path: inset(100%);*/
-/*clip: rect(0 0 0 0);*/
-/*overflow: hidden;*/
-
-/*}*/
 
 .main-header-inner {
   margin-bottom: 10px;
@@ -1770,19 +1761,12 @@ img {
 
 
 .button-modal {
-  /*Blink*/
+
   margin-left: 289px;
   margin-bottom: 6px;
   margin-top: -5px;
 }
-@-moz-document url-prefix()
-{
-  /*Mozilla кастыль*/
-  .button-modal
-  {
-    margin-top: 0px;
-  }
-}
+
 .button-close {
   position: absolute;
   font-size: 0;
@@ -1841,6 +1825,7 @@ img {
   margin-bottom: 12px;
   margin-right: 14px;
   margin-top: 3px;
+  vertical-align: top;
 }
 
 .filter-form input[type=checkbox],
@@ -2046,18 +2031,19 @@ img {
   font-weight: 500;
   padding: 7px 26px 6px;
   text-align: center;
-  margin-left: -2px;
+  margin-left: 0px;
+  margin-top: 25px;
 }
 .button-filter:hover,
 .button-filter:focus{
   background-color: rgba(255, 255, 255, 1);
   color: #323232;
-  border: none;
+  border: 2px solid transparent;
 }
 .button-filter:active{
   background-color: #eaeaea;
   color: #323232;
-  border: none;
+  border: 2px solid transparent;
   box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
 }
 .fatness-wrapper {
@@ -2102,5 +2088,21 @@ img {
   }
   .product:hover .button{
     visibility: visible;
+  }
+}
+@-moz-document url-prefix()
+{
+  /*Mozilla кастыль*/
+  .button-modal
+  {
+    margin-top: 0px;
+  }
+  .filter-group {
+    margin-right: 12px;
+  }
+  .sort {
+    padding: 9px 32px 9px 11px;
+    margin-left: -15px;
+    margin-top: 5px;
   }
 }

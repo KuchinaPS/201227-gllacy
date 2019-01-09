@@ -54,11 +54,13 @@
     transform: scale(0) rotate(0);
     opacity: 0;
   }
+
   80% {
     -webkit-transform: scale(1.2) rotate(-360deg);
     transform: scale(1.2) rotate(-360deg);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1) rotate(-360deg);
     transform: scale(1) rotate(-360deg);
@@ -72,11 +74,13 @@
     transform: scale(0) rotate(0);
     opacity: 0;
   }
+
   80% {
     -webkit-transform: scale(1.2) rotate(-360deg);
     transform: scale(1.2) rotate(-360deg);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(1) rotate(-360deg);
     transform: scale(1) rotate(-360deg);
@@ -1692,7 +1696,6 @@ img {
   -ms-flex-pack: justify;
 }
 
-
 .features {
   margin-bottom: 38px;
 }
@@ -2495,11 +2498,13 @@ img {
   .filter-group {
     margin-right: 12px;
   }
+
   .sort {
     margin-top: 5px;
     margin-left: -15px;
     padding: 9px 32px 9px 11px;
   }
+
   .button-subscription {
     margin-right: -14px;
   }
